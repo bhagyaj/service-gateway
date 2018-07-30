@@ -8,3 +8,11 @@ zuul:
       path: /dashboard/**
       url: http://descovery:8761/
 
+  hystrix:
+     command:
+       default:
+         execution:
+           isolation:
+             thread:
+               timeoutInMilliseconds: 60000
+
