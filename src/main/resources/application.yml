@@ -1,0 +1,10 @@
+zuul:
+  ignored-services: '*'
+  routes:
+    servicea:
+      path: /**
+      serviceId: servicea
+    eureka:
+      path: /dashboard/**
+      url: http://descovery:8761/
+
